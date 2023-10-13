@@ -1,0 +1,90 @@
+.episode-list {
+    display: flex;
+    text-align: left;
+}
+
+.episode-list p {
+    margin: 0rem 2rem;
+    margin-bottom: 1rem;
+    margin-right: 0;
+}
+
+.episode-list ul {
+    list-style: none;
+    padding: 0;
+}
+
+select {
+    width: 15rem;
+    padding: 1rem;
+    background-color: #2a2a2a;
+    color: white;
+    font-size: 16px;
+    border: none;
+    outline: none;
+}
+
+
+/* Add this to your App.css or a separate CSS file */
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-button {
+    text-align: left;
+    background-color: #2a2a2a;
+    color: rgb(239, 238, 238);
+    font-family: 'Poppins', sans-serif;
+    border: none;
+    cursor: pointer;
+    width: 15rem;
+    font-size: 16px;
+    outline: none;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #2a2a2a;
+    color: rgb(239, 238, 238);
+    width: 100%;
+    z-index: 1;
+}
+
+.dropdown-item {
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-top: none;
+    cursor: default;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropdown-button {
+    border: 1px solid #aaa;
+}
+
+@media screen and (max-width:650px) {
+    .dropdown-button {
+        text-align: left;
+        background-color: #2a2a2a;
+        color: rgb(239, 238, 238);
+        font-family: 'Poppins', sans-serif;
+        border: none;
+        cursor: pointer;
+        width: 12rem;
+        font-size: 16px;
+        outline: none;
+    }
+    .episode-list p {
+        margin: 0rem 1rem;
+        margin-bottom: 1rem;
+        margin-right: 0;
+    }
+}

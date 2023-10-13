@@ -1,0 +1,118 @@
+.character-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+h1 {
+    text-align: center;
+}
+
+.character_card_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.search-bar {
+    margin: 2rem 4rem;
+}
+
+.search-bar form {
+    display: flex;
+}
+
+.search-bar input {
+    font-family: 'Poppins', sans-serif;
+    width: 17rem;
+    padding: 0.5rem;
+    /* margin-right: 10px; */
+    border: 1px solid #ccc;
+    border-radius: 5px 0px 0px 5px;
+    font-size: 16px;
+    outline: none;
+}
+
+.search-bar button {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    padding: 8px 16px;
+    background-color: #2a2a2a;
+    color: #fff;
+    border: none;
+    border-radius: 0px 5px 5px 0px;
+    cursor: pointer;
+}
+
+.pagination {
+    margin: 1rem 4rem;
+}
+
+.pagination button {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    padding: 5px 10px;
+    background-color: #2a2a2a;
+    margin: 0.5rem;
+    border-radius: 10px;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: 100ms ease-in-out;
+}
+
+.pagination button:hover {
+    transform: scale(1.1);
+}
+
+
+/* Loading styles */
+
+.loading {
+    text-align: center;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+@media screen and (max-width:650px) {
+    .character-grid {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .character-card-list {
+        text-align: center;
+    }
+    .character-card-list h1 {
+        font-size: 21px;
+        margin: 2rem 0rem;
+    }
+    .character_card_container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0rem 2rem;
+        /* flex-direction: column; */
+    }
+    .search-bar {
+        margin: 0rem 0rem;
+    }
+    .search-bar form {
+        display: flex;
+    }
+    .search-bar input {
+        width: 9rem;
+        padding: 0.5rem;
+        font-size: 14px;
+    }
+    .search-bar button {
+        font-size: 12px;
+        padding: 0 10px;
+    }
+    .pagination {
+        display: flex;
+        margin: 1rem 0rem;
+    }
+    .pagination button {
+        padding: 3px 5px;
+        margin: 5px;
+    }
+}
